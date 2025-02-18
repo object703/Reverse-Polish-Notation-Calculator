@@ -71,7 +71,7 @@
             this.btn_Eval.TabIndex = 3;
             this.btn_Eval.Text = "Evaluate";
             this.btn_Eval.UseVisualStyleBackColor = true;
-            this.btn_Eval.Click += new System.EventHandler(this.Btn_Eval_Click);
+            this.btn_Eval.Click += new System.EventHandler(this.btn_Eval_Click);
             // 
             // lbl_Output
             // 
