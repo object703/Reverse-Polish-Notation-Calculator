@@ -14,7 +14,7 @@ namespace RPN
             InitializeComponent();
         }
 
-        private void Btn_Eval_Click(object sender, EventArgs e)
+        private void btn_Eval_Click(object sender, EventArgs e)
         {
             // Read and Parse Expression here... 
         }

@@ -25,13 +25,10 @@ namespace RPN
         /// Method to access the most recent element. No modifications
         /// </summary>
         /// <returns></returns>
-        /// <exception cref="System.NotImplementedException"></exception>
         public T Peek()
         {
             if (IsEmpty())
-            {
                 throw new IndexOutOfRangeException("empty stack!");
-            }
 
             return _array[_top];
         }
@@ -40,13 +37,10 @@ namespace RPN
         /// Method to retrieve element
         /// </summary>
         /// <returns></returns>
-        /// <exception cref="System.NotImplementedException"></exception>
         public T Pop()
         {
             if (IsEmpty())
-            {
                 throw new IndexOutOfRangeException("empty stack!");
-            }
 
             return _array[_top--];
         }
@@ -58,14 +52,9 @@ namespace RPN
         public void Push(T item)
         {
             if (IsFull())
-            {
                 throw new IndexOutOfRangeException("stack is full!");
-            }
             else
-            {
-                _top += 1;
-                _array[_top] = item;
-            }
+                _array[++_top] = item;
         }
     }
 }
